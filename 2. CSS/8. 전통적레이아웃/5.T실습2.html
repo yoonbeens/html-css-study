@@ -11,66 +11,59 @@
     <style>
 
         section {
-            width: 700px;
-            height: 500px;
-            background: gray;
-            margin: 20px;
+            width: 800px;
             border: 3px double #123456;
-            
+            margin: 20px auto 0;
+            color: #333;
         }
 
-        h1 {
-            width: 97%;
-            height: 60px;
-            background: lightgray;
+        section h1 {
+            font: bold 42px cursive, sans-serif;
+            background: #ccc;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section .intro {
+            font: 18px;
+            background: #464141;
+            color: white;
+            border-bottom: 3px solid gray;
             text-align: center;
             padding: 10px;
-            line-height: 60px;
-            font: bold 30px / 1.4 cursive;
         }
 
-        .intro {
-            width: 100%;
-            height: 50px;
-            background: rgb(68, 68, 68);
-            text-align: center;
-            font-size: 18px;
-            line-height: 50px;
-            
-        }
-
-        .intro > em {
+        section .intro em {
             color: yellow;
+            font-size: 1.1em;
         }
 
-        .gallery > li {
+        section .gallery {
+            background: #6e6a6a;
+            padding: 20px 0;
+        }
 
-            width: 23%;
+        section .gallery li {
+            width: 23.75%;
             height: 330px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            box-sizing: border-box;
+            margin-right: 1%;
             float: left;
-            margin: 0.9%;
-            text-align: justify;
-            
-            
         }
 
-        #tulip  {
-            background: red;
-
-         
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
         }
 
-        #tulip > h2 {
-            width: 95%;
-            height: 40%;
-            margin: 1.7%;
-            background: url(./images/tulip.jpg);
-            background-size: 150%;
-            background-position: 50% 50%;
-            
-
+        .gallery li h2 {
+            height: 150px;
+            border: 1px solid lightgray;
+            background: #fff;
         }
-
 
         .gallery li p {
             margin-top: 20px;
@@ -81,53 +74,42 @@
             color: #000;
         }
 
-
-        #jebi {
-            background: violet;
+        #tulip {
+            margin-left: 1%;
+            background: #d31515;
         }
 
-        #jebi > h2 {
-            width: 95%;
-            height: 40%;
-            margin: 1.7%;
-            background: url(./images/jebi.jpg);
-            background-size: 150%;
-            background-position: 50% 50%;
-            
-            
+        #tulip h2 {
+            background-image: url(./images/tulip.jpg);
+            background-size: cover;
+            background-position: 40%;
+        }
+
+        #jebi {
+            background: #e941f9;
+        }
+
+        #jebi h2 {
+            background: url(./images/jebi.jpg) no-repeat 50% / cover;
         }
 
         #hobak {
-            background: orange;
+            background: #fe692b;
         }
 
+        #hobak h2 {
+            background: url(./images/hobak.jpg) no-repeat 40% / cover;
 
-        #hobak > h2 {
-            width: 95%;
-            height: 40%;
-            margin: 1.7%;
-            background: url(./images/hobak.jpg);
-            background-size: 150%;
-            background-position: 50% 50%;
         }
 
         #sunflower {
-            background: yellow;
-            
+            background-color: #f3ea33;
+
         }
 
-        #sunflower > h2 {
-            width: 95%;
-            height: 40%;
-            margin: 1.7%;
-            background: url(./images/sunflower.jpg);
-            background-size: 150%;
-            background-position: 50% 50%;
-            
-            
+        #sunflower h2 {
+            background: url(./images/sunflower.jpg) no-repeat 20% / cover;
         }
-
-
 
     </style>
 
@@ -141,9 +123,9 @@
             표정 있는 꽃들을 선호할 것이다.
         </p>
 
-        <ul class="gallery">
+        <ul class="gallery clearfix">
             <li id="tulip">
-                <h2></h2> <!-- 각 h2에 background 속성 사용해서 url로 꽃 이미지 넣기 -->               
+                <h2></h2> <!-- 각 h2에 background 속성 사용해서 url로 꽃 이미지 넣기 -->
                 <p>너무 화려하지 않으며 고귀한 느낌을 가지고 있다.
                     붉은 색이 단연 으뜸이며 한 송이만 있어도 빼어나다.</p>
             </li>
