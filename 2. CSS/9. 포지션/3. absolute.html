@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .grandparent {
+            width: 400px;
+            height: 300px;
+            padding: 100px;
+            border: 4px dashed gray;
+            position: relative;
+        }
+
+        .parent {
+            width: 300px;
+            height: 300px;
+            border: 4px dashed lightgray;
+            position: relative;
+            left: 100px;
+            top: 50;
+        }
+
+        .child {
+            width: 100px;
+            height: 80px;
+            background: tomato;
+            border: 4px dashed red;
+            border-radius: 10px;
+            font-size: 30px;
+        }
+
+        /* 
+        apsolute는 position을 가진 부모 기준으로 움직인다.
+        position을 가진 부모가 없으면 화면을 기준으로 움직인다.
+        position을 가진 부모가 둘 이상이면 직속 부모 기준으로 움직인다.
+        */
+        .absolute {
+            position: absolute;
+            right: 100px;
+            bottom: 150px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="grandparent">
+        <div class="parent">
+            <div class="child">1</div>
+            <div class="child absolute">2</div>
+            <div class="child">3</div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,84 @@
+
+@import url('../../common.css');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Jua&display=swap');
+
+body {
+    font-size: 14px;
+    background: #666;
+    line-height: 1.5;
+    font-family: 'Gulim';
+}
+
+#wrapper {
+    width: 1000px;
+    height: 1000px;
+    margin: 20%;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #cc0;
+    text-align: center;
+    font-family: 'Gowun Dodum', sans-serif;
+    font-family: 'Jua', sans-serif;
+    background: rgb(47, 47, 145);
+    width: 1000px;
+    height: 150px;
+}
+
+header h1 strong {
+    font-size: 2em;
+    color: white;
+}
+
+header h1 em {
+    font-size: 1.5em;
+    color: white;
+}
+
+header h1 span {
+    font-size: 1.3em;
+}
+
+.menu {
+    width: 300px;
+    height: 1000px;
+    background: lightgray;
+    text-indent: 20px;
+    float: left;
+}
+
+.content {
+    width: 700px;
+    background: white;
+    text-indent: 10px;
+    height: 1000px;
+    float: right;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.content > h2 {
+    background: rgb(116, 18, 18);
+    color: yellow;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    width: 700px;
+}
+
+.content > p {
+    padding: 10px;
+}
+
+footer {
+    background: rgb(167, 165, 165);
+    padding: 20px;
+    width: 960px;
+    height: 20px;
+}
