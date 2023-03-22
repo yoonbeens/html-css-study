@@ -1,0 +1,127 @@
+@import url(../common.css);
+
+#wrapper h1 {
+    color: white;
+    background: orange;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    
+}
+
+#wrapper span {
+    display: block;
+    font-size: 12px;
+}
+
+.stit {
+    width: auto;
+    height: 14px;
+    background: lightgray;
+    font-size: 10px;
+    text-align: center;
+}
+
+body {
+    background: gray;
+}
+
+.container {
+    width: 100%;
+}
+
+.side-menu {
+    width: 20%;
+    height: 1000px;
+    float: left;
+    background-color: white;
+
+}
+
+.side-menu h3 {
+    background: red;
+}
+
+.side-menu a {
+    font-size: 0.5em;
+    text-decoration: underline;
+    padding: 3px;
+}
+
+.side-menu a:hover {
+    border-bottom: 1px dashed;
+}
+
+.main-content {
+    background: lightgray;
+    width: 60%;
+    height: 1000px;
+    color: darkblue;
+    float: left;
+    padding: 10px;
+}
+
+.main-content .title {
+    width: auto;
+    height: 30px;
+    color: white;
+    background: rgb(33, 33, 87);
+    padding: 8px;
+    font-size: 15px;
+}
+
+.main-content .artist {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.main-content .detail {
+    font-size: 12px;
+    padding: 10px;
+}
+
+.banner {
+    width: 20%;
+    height: 1000px;
+    background: white;
+    float: left;
+    
+}
+
+
+.banner h3 {
+    font-size: 20px;
+}
+
+.all {
+    color: lightgray;
+    text-decoration: underline;
+    padding: 5px;
+    display: block;
+}
+
+.love {
+    color: orange;
+    text-decoration: underline;
+    display: block;
+    padding: 5px;
+}
+
+.banner .link  {
+    font-size: 12px;
+    padding: 20px;
+}
+
+.banner .link a {
+    text-decoration: underline;
+    font-weight: bold;
+    display: block;
+    
+}
+
+footer {
+    font-size: 12px;
+    background: rgb(43, 43, 122);
+    color: white;
+}
